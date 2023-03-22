@@ -1,8 +1,8 @@
 @isTest
 private class WelcomeToPwCTest {
     @isTest
-    public WelcomeToPwCTest() {
+    static void  WelcomeToPwCTest() {
         WelcomeToPwC.printWelcomeMessage();
-        
+        //System.assert('hello','hello');
     }
 }
