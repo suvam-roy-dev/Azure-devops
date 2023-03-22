@@ -5,4 +5,9 @@ private class WelcomeToPwCTest {
         WelcomeToPwC.printWelcomeMessage();
         //System.assert('hello','hello');
     }
+    @isTest
+    static void printAzureDevopsMessageTest() {
+        WelcomeToPwC.printAzureDevopsMessage();
+
+    }
 }
