@@ -14,4 +14,8 @@ private class WelcomeToPwCTest {
     static void printAzureDevopsMessage12Test(){
         WelcomeToPwC.printAzureDevopsMessage12();
     }
+    @isTest
+    static void printAzureDevopsMessage14Test(){
+        WelcomeToPwC.printAzureDevopsMessage14();
+    }
 }
