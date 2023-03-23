@@ -13,6 +13,10 @@ trigger:
      - README.md
      - azure-pipelines.yml
      - azure-pipelines-1.yml
+pr:
+ branches:
+   include:
+     - develop
 steps:
 - script: echo this is the validation pipeline
 - task: UseNode@1
