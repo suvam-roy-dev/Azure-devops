@@ -5,6 +5,7 @@
 
 trigger: none
 steps:
+- script: echo this is the validation pipeline
 - task: UseNode@1
   inputs:
     version: '14.x'
