@@ -19,5 +19,6 @@ public with sharing class WelcomeToPwC {
         System.debug('Hello, how r u 15?');
         assert.isNotNull('hello');
         assert.isNotNull('hello');
+        assert.isNotNull('hello');
     }
 }
