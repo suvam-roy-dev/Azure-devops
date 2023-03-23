@@ -5,6 +5,14 @@
 
 trigger: 
  batch: "true"
+ branches:
+     include:
+     - develop
+ paths:
+     exclude:
+     - README.md
+     - azure-pipelines.yml
+     - azure-pipelines-1.yml
 steps:
 - script: echo this is the validation pipeline
 - task: UseNode@1
