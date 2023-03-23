@@ -23,3 +23,5 @@ steps:
 - script: 
     sfdx force:mdapi:deploy -d ./toDeploy -l RunLocalTests -c -u targetOrg -w 10
   displayName: Run validation on source code
+- script: echo run the second pipeline
+- template: azure-pipelines-1.yml
