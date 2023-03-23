@@ -7,4 +7,8 @@ public with sharing class WelcomeToPwC {
         System.debug('Welcome to Azure devops');
         assert.isNotNull('hello');
     }
+    public static void printAzureDevopsMessage12(){
+        System.debug('Hello, how r u ?');
+        assert.isNotNull('hello');
+    }
 }
