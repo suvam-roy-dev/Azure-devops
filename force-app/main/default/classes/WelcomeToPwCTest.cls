@@ -10,7 +10,7 @@ private class WelcomeToPwCTest {
         WelcomeToPwC.printAzureDevopsMessage();
 
     }
-    @is@TestSetup
+    @isTest
     static void printAzureDevopsMessage12Test(){
         WelcomeToPwC.printAzureDevopsMessage12();
     }
