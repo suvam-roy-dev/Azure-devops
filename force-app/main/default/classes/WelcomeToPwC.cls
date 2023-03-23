@@ -18,5 +18,6 @@ public with sharing class WelcomeToPwC {
     public static void printAzureDevopsMessage15(){
         System.debug('Hello, how r u 15?');
         assert.isNotNull('hello');
+        assert.isNotNull('hello');
     }
 }
