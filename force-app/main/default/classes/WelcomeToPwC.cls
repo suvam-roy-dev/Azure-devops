@@ -34,5 +34,6 @@ public with sharing class WelcomeToPwC {
         assert.isNotNull('hello');
         assert.isNotNull('hello');
         assert.isNotNull('hello');
+        assert.isNotNull('hello');
     }
 }
