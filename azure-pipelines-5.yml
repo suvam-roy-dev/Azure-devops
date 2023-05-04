@@ -23,7 +23,7 @@ stages:
             displayName: 'PMD apex analysis'
             inputs:
               projectDirectory: 'Azure-devops/tree/develop/force-app/main/default/classes'
-              ruleset: 'apex_pmd.xml'
+              ruleset: 'apex_pmd_ruleset.xml'
               format: 'apex'
               
 
