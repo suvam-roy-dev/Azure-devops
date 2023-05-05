@@ -12,6 +12,12 @@ trigger:
      exclude:
      - README.md
      - azure-pipelines.yml
+     - azure-pipelines-1.yml
+# resources:
+#  pipelines:
+#    - pipeline: trigger-validation
+#      source: For validation on PR raise
+#      trigger: true
 steps:
 - task: UseNode@1
   inputs:

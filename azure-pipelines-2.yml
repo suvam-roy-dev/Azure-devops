@@ -3,7 +3,20 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: none
+trigger: 
+ batch: "true"
+ branches:
+     include:
+     - develop
+ paths:
+     exclude:
+     - README.md
+     - azure-pipelines.yml
+     - azure-pipelines-1.yml
+pr:
+ branches:
+   include:
+     - develop
 steps:
 - script: echo this is the validation pipeline
 - task: UseNode@1
