@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+ batch: "true"
+ branches:
+     include:
+     - develop
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: PMD_Ruleset
+    displayName: PMD Ruleset
+    jobs:
+      - job: PMD
+        displayName: PMD
+        steps:
+          - task: PMD@3
+            displayName: 'PMD apex analysis'
+            inputs:
+              projectDirectory: 'Azure-devops/tree/develop/force-app/main/default/classes'
+              ruleset: 'apex_pmd_ruleset.xml'
+              format: 'apex'
+              
+
+            
